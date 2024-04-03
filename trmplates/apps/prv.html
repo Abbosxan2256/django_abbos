@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{% url 'prv_view' %}"><button>Prev</button></a>
+<a href="{% url 'next_view' %}"><button>Next</button></a>
+
+{% for foo in product_prv %}
+    
+    <h1>{{ foo.id }})   {{ foo }}</h1>
+    
+{% endfor %}
+</body>
+</html>
